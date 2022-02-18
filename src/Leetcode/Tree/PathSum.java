@@ -28,10 +28,10 @@ public class PathSum {
         public static void main(String[] args) {
             BinaryTree tree = new BinaryTree();
             tree.root = new TreeNode(1);
-            tree.root.left = new TreeNode(1);
-            tree.root.right = new TreeNode(1);
-            tree.root.left.left = new TreeNode(1);
-            tree.root.left.right = new TreeNode(1);
+            tree.root.left = new TreeNode(2);
+            tree.root.right = new TreeNode(3);
+            tree.root.left.left = new TreeNode(4);
+            tree.root.left.right = new TreeNode(5);
             pathSUm(tree.root);
             System.out.println("hi");
         }
@@ -40,7 +40,6 @@ public class PathSum {
 
         private static void pathSUm(TreeNode root) {
             util(root,0);
-
         }
 
         private static void util(TreeNode root,int sum) {

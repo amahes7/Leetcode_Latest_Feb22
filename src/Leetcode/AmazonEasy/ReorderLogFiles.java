@@ -52,7 +52,7 @@ public class ReorderLogFiles {
             }
         });
 
-        // Here I am copying the sorted list in HashMap
+        // OlderPackage.Here I am copying the sorted list in HashMap
         // using LinkedHashMap to preserve the insertion order
         HashMap sortedHashMap = new LinkedHashMap();
         for (Iterator it = list.iterator(); it.hasNext();) {

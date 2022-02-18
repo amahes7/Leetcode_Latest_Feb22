@@ -24,10 +24,11 @@ class BinaryTree{
 
         BinaryTree tree = new BinaryTree();
         tree.root = new Node(1);
-        tree.root.left = new Node(1);
-        tree.root.right = new Node(1);
-        tree.root.left.left = new Node(1);
-        tree.root.left.right = new Node(1);
+        tree.root.left = new Node(6);
+        tree.root.right = new Node(8);
+        tree.root.left.left = new Node(3);
+        tree.root.left.right = new Node(4);
+        tree.root.right.right = new Node(23);
 
 
         BinaryTree tree1 = new BinaryTree();
@@ -43,14 +44,23 @@ class BinaryTree{
         tree1.root.right.right.right = new Node(9);
 
 
+//        trees.DFS.BinaryTree tree1 = new trees.DFS.BinaryTree();
+//        tree1.root1 = new trees.DFS.Node(1);
+//        tree1.root1.left = new trees.DFS.Node(6);
+//        tree1.root1.right = new trees.DFS.Node(8);
+//        tree1.root1.left.left = new trees.DFS.Node(3);
+//        tree1.root1.left.right = new trees.DFS.Node(4);
+//        tree1.root1.right.right = new trees.DFS.Node(23);
 
-//        System.out.println("\nInorder traversal of binary tree is ");
-//        tree1.printInorder();
+
+
+        System.out.println("\nInorder traversal of binary tree is ");
+        tree.printInorder();
 //        System.out.println("\nPreOrder traversal of binary tree is ");
 //        tree.printPreorder();
 //        System.out.println("\nPostOrder traversal of binary tree is ");
 //        tree.printPostorder();
-        System.out.println(tree.isUnivalTree());
+//        System.out.println(tree.isUnivalTree());
     }
 
     private boolean isUnivalTree() {
